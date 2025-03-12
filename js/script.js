@@ -1,6 +1,36 @@
 $(document).ready(function() {
 
 
+  new WOW().init();
+
+  var counted = false;
+  $(window).on("scroll", function () {
+    var oTop = $(".counter").offset().top - window.innerHeight;
+    if (!counted && $(window).scrollTop() > oTop) {
+      $(".count-number").each(function () {
+        var $this = $(this),
+            countTo = $this.attr("data-to"),
+            speed = parseInt($this.attr("data-speed"));
+
+        $({ countNum: 0 }).animate(
+          { countNum: countTo },
+          {
+            duration: speed * 100,
+            easing: "swing",
+            step: function () {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+              $this.text(this.countNum);
+            }
+          }
+        );
+      });
+      counted = true;
+    }
+  });
+
+
     // THiS JS IS USED OF SHOW AND HIDE MOBILE MENU
 
     $('#trigger-overlay').on('click', function(){
