@@ -575,7 +575,7 @@ p.count-text {
     }
     .special-ingredient{
       position: relative;
-      width: auto;
+      width: 80%;
     }
     .left .ingredient-title {
       text-align: left;
@@ -682,7 +682,7 @@ p.count-text {
     }
     .special-ingredient{
       position: relative;
-      width: auto;
+      width: 80%;
     }
     .left .ingredient-title {
       text-align: left;
@@ -732,7 +732,30 @@ p.count-text {
     .spciatlingredients{
       flex-direction: column;
     } 
-    
+    .product-box {
+      padding: 0;
+      margin: 100px 0 35px 0;
+    }
+    .product-box img {
+        top: 25%;
+        width: 44%;
+      }
+      .product-box-right {
+        padding: 0;
+        margin: 100px 0 35px 0;
+      }
+      .product-box-right img {
+          top: 25%;
+          width: 44%;
+      }
+      .extra{
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+      .ingredeintdiv{
+        padding: 0px;
+        gap: 0px;
+      }
   }
   
   /* Tablets in landscape mode and small desktops */
