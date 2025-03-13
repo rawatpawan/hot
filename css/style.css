@@ -677,6 +677,9 @@ p.count-text {
     .spciatlingredients{
       padding: 2rem;
     }
+    .product-box-right .ps-5{
+      padding-left:2rem !important;
+    }
   }
   
   /* Tablets in portrait mode */
@@ -795,6 +798,9 @@ p.count-text {
       }
       .spciatlingredients{
         padding: 2rem;
+      }
+      .product-box-right .ps-5{
+        padding-left:2rem !important;
       }
   }
   
