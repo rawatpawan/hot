@@ -4,34 +4,36 @@ $(document).ready(function() {
   new WOW().init();
 
   var counted = false;
-  $(window).on("scroll", function () {
-    var oTop = $(".counter").offset().top - window.innerHeight;
-    if (!counted && $(window).scrollTop() > oTop) {
-      $(".count-number").each(function () {
-        var $this = $(this),
-            countTo = $this.attr("data-to"),
-            speed = parseInt($this.attr("data-speed"));
+$(window).on("scroll", function () {
+  var oTop = $(".counter").offset().top - window.innerHeight;
+  if (!counted && $(window).scrollTop() > oTop) {
+    var maxDuration = 2000; // Sab counters ko 2 seconds mein complete karne ke liye
 
-        
-        var normalizedSpeed = Math.min(speed, 100);
-        
-        $({ countNum: 0 }).animate(
-          { countNum: countTo },
-          {
-            duration: normalizedSpeed * 50,
-            easing: "swing",
-            step: function () {
-              $this.text(Math.floor(this.countNum));
-            },
-            complete: function () {
-              $this.text(this.countNum);
-            }
+    $(".count-number").each(function () {
+      var $this = $(this),
+          countTo = parseInt($this.attr("data-to"));
+      
+      // Har counter ke liye step size nikalte hain
+      var stepTime = maxDuration / countTo;
+
+      $({ countNum: 0 }).animate(
+        { countNum: countTo },
+        {
+          duration: maxDuration,
+          easing: "swing",
+          step: function () {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function () {
+            $this.text(this.countNum);
           }
-        );
-      });
-      counted = true;
-    }
-  });
+        }
+      );
+    });
+    counted = true;
+  }
+});
+
 
 
 

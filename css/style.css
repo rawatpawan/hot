@@ -183,7 +183,7 @@
   /* COMMON CSS ENDS  */
   
 .websiteLogo {
-  width: 60%;
+  width: 70%;
 }
 /* .desktopMenu{
   position: fixed;
@@ -218,6 +218,13 @@
 }
 .desktopMenu a:hover{
   color: #e6b139;
+}
+.footernav a:hover{
+  color: #e6b139;
+}
+.footernav .activenav{
+  color: #e6b139;
+
 }
 #slider1{
   width: 100%;
@@ -276,7 +283,7 @@
 .ingredeintdiv {
   display: grid;
   grid-template-columns: 1.5fr 1fr 1.5fr;
-  gap: 100px; /* Space between columns */
+  gap: 120px; /* Space between columns */
   padding: 20px;
 }
 .wholeSection{
@@ -328,7 +335,7 @@
 
 
 .image-content img {
-  max-width: 120%;
+  max-width: 150%;
   height: auto;
 }
 .abouticon{
@@ -500,7 +507,7 @@ p.count-text {
 }   
 
 .product-box {
-  border: 2px solid #e6b139;
+  border: 5px solid #e6b139;
   position: relative;
   background: url('../images/khaini1.jpg');
   background-position: center center;
@@ -518,7 +525,7 @@ p.count-text {
   left: 5%;
 }
 .product-box-right {
-  border: 2px solid #e6b139;
+  border: 5px solid #e6b139;
   position: relative;
   background: url('../images/khaini2.jpg');
   background-position: center center;
@@ -540,7 +547,16 @@ p.count-text {
   margin-top: 210px !important;
 
 }
+.extra-padding-left{
+  padding-left: 6rem;
+}
+.extra-padding-right{
+  padding-right: 5rem;
 
+}
+.spciatlingredients{
+  padding-top: 200px;
+}
   /** RESPONSIVE MEDIA QUERY **/
   
   /* Small screens, such as smartphones */
@@ -575,7 +591,6 @@ p.count-text {
     }
     .special-ingredient{
       position: relative;
-      width: 80%;
     }
     .left .ingredient-title {
       text-align: left;
@@ -649,6 +664,19 @@ p.count-text {
       padding: 0px;
       gap: 0px;
     }
+    .extra-padding-left{
+      padding: 1rem;
+    }
+    .extra-padding-right{
+      padding: 1rem;
+    
+    }
+    .item{
+      padding: 2rem;
+    }
+    .spciatlingredients{
+      padding: 2rem;
+    }
   }
   
   /* Tablets in portrait mode */
@@ -682,7 +710,6 @@ p.count-text {
     }
     .special-ingredient{
       position: relative;
-      width: 80%;
     }
     .left .ingredient-title {
       text-align: left;
@@ -755,6 +782,19 @@ p.count-text {
       .ingredeintdiv{
         padding: 0px;
         gap: 0px;
+      }
+      .extra-padding-left{
+        padding: 1rem;
+      }
+      .extra-padding-right{
+        padding: 1rem;
+      
+      }
+      .item{
+        padding: 2rem;
+      }
+      .spciatlingredients{
+        padding: 2rem;
       }
   }
   
