@@ -12,10 +12,13 @@ $(document).ready(function() {
             countTo = $this.attr("data-to"),
             speed = parseInt($this.attr("data-speed"));
 
+        
+        var normalizedSpeed = Math.min(speed, 100);
+        
         $({ countNum: 0 }).animate(
           { countNum: countTo },
           {
-            duration: speed * 100,
+            duration: normalizedSpeed * 50,
             easing: "swing",
             step: function () {
               $this.text(Math.floor(this.countNum));
@@ -29,6 +32,7 @@ $(document).ready(function() {
       counted = true;
     }
   });
+
 
 
     // THiS JS IS USED OF SHOW AND HIDE MOBILE MENU
@@ -90,16 +94,16 @@ $(document).ready(function() {
         }
     });
   
-    $(window).scroll(function () {
-        let scrollHeight = $(document).height();  
-        let scrollTop = $(window).scrollTop();   
-        let clientHeight = $(window).height();   
+    // $(window).scroll(function () {
+    //     let scrollHeight = $(document).height();  
+    //     let scrollTop = $(window).scrollTop();   
+    //     let clientHeight = $(window).height();   
 
-        if (scrollTop + clientHeight >= scrollHeight - 10) {
-            $(".desktopMenu").fadeOut(500); 
-        } else {
-            $(".desktopMenu").fadeIn(500);  
-        }
-    });
+    //     if (scrollTop + clientHeight >= scrollHeight - 10) {
+    //         $(".desktopMenu").fadeOut(500); 
+    //     } else {
+    //         $(".desktopMenu").fadeIn(500);  
+    //     }
+    // });
 
 });
