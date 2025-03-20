@@ -45,7 +45,9 @@ $(window).on("scroll", function () {
     $('.overlay-close').on('click', function(){
         $(".overlay").removeClass('open');	
     });
-
+    $('.overlay a').on('click', function() {
+        $(".overlay").removeClass('open');
+    });
 
     // carousel with custom nav
     $('.firstcarousel').owlCarousel({

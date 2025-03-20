@@ -650,7 +650,10 @@ p.count-text {
     .product-box {
       padding: 0;
       margin: 100px 0 35px 0;
-      padding-top:100px
+      padding-top:100px;
+      padding-right: 10px;
+      padding-left: 10px;
+      text-align: center;
     }
     .product-box img {
       top: 0%;
@@ -661,7 +664,9 @@ p.count-text {
     .product-box-right {
       padding: 0;
       margin: 100px 0 35px 0;
-      padding-top:100px
+      padding-top:100px;
+      padding-right: 10px;
+      text-align: center;
     }
     .product-box-right img {
       top: 0%;
@@ -693,7 +698,13 @@ p.count-text {
       text-align: center;
     }
     .product-box-right .ps-5{
-      padding-left:2rem !important;
+      padding-left:12px !important;
+    }
+    .left {
+      padding-left: 10px;
+    }
+    .right {
+      padding-right: 10px;
     }
   }
   
@@ -786,7 +797,10 @@ p.count-text {
     .product-box {
       padding: 0;
       margin: 100px 0 35px 0;
-      padding-top:100px
+      padding-top:100px;
+      padding-right: 10px;
+      padding-left: 10px;
+      text-align: center;
     }
     .product-box img {
       top: 0%;
@@ -797,7 +811,9 @@ p.count-text {
     .product-box-right {
       padding: 0;
       margin: 100px 0 35px 0;
-      padding-top:100px
+      padding-top:100px;
+      padding-right: 10px;
+      text-align: center;
     }
     .product-box-right img {
       top: 0%;
@@ -829,7 +845,13 @@ p.count-text {
         text-align: center;
       }
       .product-box-right .ps-5{
-        padding-left:2rem !important;
+        padding-left:12px !important;
+      }
+      .left {
+        padding-left: 10px;
+      }
+      .right {
+        padding-right: 10px;
       }
   }
   
