@@ -715,9 +715,6 @@ input[type="text"] {
     .extra img{
       width: 60%;
     }
-    #slider1 .owl-carousel .item img{
-      height: 50vh;
-    }
     .special-head{
       font-size: 2rem;
       text-align: center;
@@ -909,9 +906,6 @@ input[type="text"] {
       }
       .extra img{
         width: 60%;
-      }
-      #slider1 .owl-carousel .item img{
-        height: 50vh;
       }
       .special-head{
         font-size: 2rem;
