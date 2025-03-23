@@ -722,7 +722,7 @@ input[type="text"] {
     }
     .mobile-special-ingredients{
       background: url('../images/special-ingredients-bg2.png');
-      height: 41vh;
+      height: 45vh;
       background-position: center center;
       background-size: cover;
       position: relative;
@@ -914,7 +914,7 @@ input[type="text"] {
       }
       .mobile-special-ingredients{
         background: url('../images/special-ingredients-bg2.png');
-        height: 40vh;
+        height: 45vh;
         background-position: center center;
         background-size: cover;
         position: relative;
